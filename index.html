@@ -5,42 +5,84 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Solomiia-Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <div class="form-wrapper">
-          <h3 class="form-title">register</h3>
-            <form action="" method="get">
-                <fieldset>
-                    <div class="fullname">
+            <form class="form-container" action="" method="get">
+                <fieldset class="fieldset-container">
+                    <legend class="legend form-text text-capitalize">
+                        register
+                    </legend>
+                    <span class="form-text" for=""
+                        >Create your account. It's free and only takes a
+                        mynute.</span
+                    >
+                    <div class="fullname-box">
                         <input
+                            class="input-fullname text-capitalize first-name"
                             type="text"
                             name="fullName"
                             placeholder="first name"
                             autofocus
                         />
                         <input
+                            class="input-fullname text-capitalize last-name"
                             type="text"
                             name="fullName"
                             placeholder="last name"
                         />
                     </div>
-                    <input type="email" placeholder="email" />
-                    <input type="password" placeholder="password" />
-                    <input type="password" placeholder="confirm password" />
-                    <input type="submit" value="ragister now" />
-                    <label for="">
+                    <input
+                        type="email"
+                        class="big-input text-capitalize"
+                        placeholder="email"
+                    />
+
+                    <input
+                        type="password"
+                        class="big-input text-capitalize"
+                        placeholder="password"
+                    />
+
+                    <input
+                        type="password"
+                        class="big-input text-capitalize"
+                        placeholder="confirm password"
+                    />
+
+                    <input
+                        type="submit"
+                        class="input-submit big-input text-capitalize"
+                        value="ragister now"
+                    />
+                    <label for="" class="checkbox-label">
                         <input type="checkbox" />
-                        <span
-                            >i accept <a href="">term of use</a>&
-                            <a href="">privacy policy</a></span
-                        >
                     </label>
+                    <span class="form-text checkbox-text"
+                        >I accept
+                        <a class="checkbox-link" href="">Terms of use</a>&
+                        <a class="checkbox-link" href=""
+                            >Privacy policy</a
+                        ></span
+                    >
                 </fieldset>
-                <div>
-                    <span>alredy have an account? <a href="">sign in</a></span>
-                </div>
             </form>
+            <div class="form-footer">
+                <span class="form-footer__text"
+                    >Alredy have an account?<a
+                        class="text-capitalize form-footer__text"
+                        href=""
+                        >sign in</a
+                    ></span
+                >
+            </div>
         </div>
     </body>
 </html>
